@@ -33,7 +33,7 @@ function HeaderPart({setSearch, databylang}) {
 
                     <div className='searchBox'>
                         <form  onSubmit={()=>formSearch} method='post'>
-                            <input type="text" name="searchItem" className='hideTextField' onChange={handleChange} placeholder={databylang.search?.placeholder} />
+                            <input type="text" name="searchItem" className="manageInputFieldHeader"onChange={handleChange} placeholder={databylang.search?.placeholder} />
                         </form>
                         <Button onClick={formSearch}>
                             <FontAwesomeIcon icon={faSearch} width={"42"} />

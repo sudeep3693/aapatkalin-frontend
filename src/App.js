@@ -9,6 +9,7 @@ import Paginnation from './Pagination/Pagination'
 import Footer from './FooterSection/Footer';
 import ModalValidatee from './Validations/ModalValidatedd';
 import FetchRecords from './FetchJson/fetchAll';
+
 function App() {
 
 
@@ -36,7 +37,7 @@ function App() {
       <Paginnation dataset={data} lang ={language} databylang={databylang}/>
       <Footer setOpenContactModal={setOpenContactModal}  setOpenAboutModal={setOpenAboutModal} databylang={databylang}/>
       
-      <ModalValidatee  openContactModal={openContactModal}  openAboutModal={openAboutModal} setOpenContactModal={setOpenContactModal}  setOpenAboutModal={setOpenAboutModal}/>
+      <ModalValidatee  openContactModal={openContactModal}  openAboutModal={openAboutModal} setOpenContactModal={setOpenContactModal}  setOpenAboutModal={setOpenAboutModal} databylang={databylang}/>
      
       
 

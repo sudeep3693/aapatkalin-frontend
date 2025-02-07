@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import AddContactModal from "../Modals/AddContactModal";
 import AddAboutModal from "../Modals/addAboutModal";
 
-function ModalValidatee({ openContactModal, openAboutModal, setOpenContactModal, setOpenAboutModal }) {
+function ModalValidatee({ openContactModal, openAboutModal, setOpenContactModal, setOpenAboutModal,databylang }) {
   const [showContact, setShowContact] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
 
@@ -25,8 +25,8 @@ function ModalValidatee({ openContactModal, openAboutModal, setOpenContactModal,
   return (
     <>
       {console.log("showContact:", showContact)}
-      <AddContactModal show={showContact} handleClose={() => setShowContact(false)} />
-        <AddAboutModal show={showAbout} handleClose={()=> setShowAbout(false)}/>
+      <AddContactModal show={showContact} handleClose={() => setShowContact(false) } databylang={databylang} />
+        <AddAboutModal show={showAbout} handleClose={()=> setShowAbout(false)} databylang={databylang}/>
     </>
   );
 }

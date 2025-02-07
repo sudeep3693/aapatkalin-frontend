@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 
 
+
 function ReactTable({data, searchBy, databylang}){
 const [printText,setPrintText] = useState("")
 
@@ -23,6 +24,11 @@ useEffect(()=>{
 
   }
 },[databylang, searchBy])
+
+const openModal = (number)=>{
+
+console.log(number);
+}
  
 return(
 
@@ -51,7 +57,7 @@ return(
       <tbody>
         
       {data.map((d, index) => (
-            <tr key={index}>
+            <tr key={index}  onClick={()=>openModal(d.number)}>
         <td>{d.name}</td>
         <td>{d.number}</td>
         <td>{d.category}</td>

@@ -16,13 +16,13 @@ const handleTheme = ()=>{
 setTheme(!theme)
 }
 
-const [imageSrc, setImageSrc] = useState(usaImg);
+const [imageSrc, setImageSrc] = useState(nepImg);
 
   const handleChangeImage = () => {
     setImageSrc(
-      imageSrc === usaImg
-        ? nepImg
-        : usaImg
+      imageSrc === nepImg
+        ? usaImg
+        : nepImg
     );
   };
 

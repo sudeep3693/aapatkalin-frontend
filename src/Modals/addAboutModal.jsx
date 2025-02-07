@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import '../App.css';
 
-function AddAboutModal({show,handleClose}) {
+function AddAboutModal({show,handleClose, databylang}) {
 
 
   return (
