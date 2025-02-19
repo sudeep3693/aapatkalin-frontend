@@ -43,14 +43,29 @@
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(10px);
 }
+.navbarButtoncontainer{
+  height: 30px;;
+  width: 30px;
+  padding: 0px;
+  justify-content: center;
+  text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    border:none;
+    
+}
+
+
 .navbarButton{
 height: 30px;;
 width: 30px;
+margin: 0px;
   border-radius: 50%;
   background-color: white;
   border:none;
   
 }
+
 
 
 
@@ -113,7 +128,50 @@ padding: 5px;
   color: #398499;
 }
 
+.manageAdminButtons {
+  display: flex;
+  gap: 8px; /* Space between buttons */
+  justify-content: center;
+}
 
+.manageAdminButtons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Edit Button */
+.manageAdminButtons button:nth-child(1) {
+  background-color: #007bff; /* Blue */
+  color: white;
+}
+
+.manageAdminButtons button:nth-child(1):hover {
+  background-color: #0056b3;
+}
+
+/* Delete Button */
+.manageAdminButtons button:nth-child(2) {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+.manageAdminButtons button:nth-child(2):hover {
+  background-color: #a71d2a;
+}
+
+/* Commit Button */
+.manageAdminButtons button:nth-child(3) {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+.manageAdminButtons button:nth-child(3):hover {
+  background-color: #1e7e34;
+}
 
 .manual-list{
 
@@ -166,6 +224,22 @@ padding: 5px;
   margin-top: 20px;
 }
 
+.manualRow{
+  height:25%;
+  
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+
+.manualRow .manualContent{
+  margin-top:15px;
+}
+
 .pagination button,
 .pagination .ellipsis {
   min-width: 35px; /* Ensures all buttons have the same width */
@@ -206,9 +280,15 @@ padding: 5px;
 }
 
 /* Increase Modal Width */
-/* Increase Modal Width */
 .custom-modal .modal-dialog {
   max-width: 800px; /* Expands modal size */
+  width: 95%;
+}
+
+/* Increase Modal Width */
+.custom-modalAbout .modal-dialog {
+  max-width: 600px; /* Expands modal size */
+  width:95%;
 }
 
 /* Darken and Blur Modal Backdrop */
@@ -222,6 +302,15 @@ padding: 5px;
   transition: backdrop-filter 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+.aboutWidth{
+  width:90%;
+ 
+}
+
+
+.text-justify {
+  text-align: justify;
+}
 
 
 

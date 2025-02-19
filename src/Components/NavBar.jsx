@@ -36,8 +36,8 @@ const [imageSrc, setImageSrc] = useState(nepImg);
         <Nav>
 
         <ul className="list-unstyled manual-list">
-                <li><button id="langButton" className="navbarButton" onClick={() => { handleChangeImage(); handleLanguage(); }}><img src={imageSrc} alt="My Image" className="navbarButton" /></button></li>
-                <li><button id="ThemeButton" className="navbarButton" onClick={handleTheme}>1</button></li>
+                <li><button id="langButton" className="navbarButtoncontainer" onClick={() => { handleChangeImage(); handleLanguage(); }}><img src={imageSrc} alt="My Image" className="navbarButton" /></button></li>
+                <li><button id="ThemeButton" className="navbarButtoncontainer" onClick={handleTheme}></button></li>
 
             </ul>
         </Nav>
