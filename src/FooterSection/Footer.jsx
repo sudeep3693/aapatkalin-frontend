@@ -23,7 +23,7 @@ return(
         <Row className="mt-4">
             <Col md={4} sm className="offset-md-4 mt-3 text-center mb-4">
             <div>
-            <h2 className=" App-Navbar text-primary">Aakashmik</h2>
+            <h2 className=" App-Navbar text-primary">Apatkalin</h2>
             </div>
             <div>
                 <button className="buttons" onClick={()=>addContact()}><u>{databylang.footer?.add_contact}</u></button>
