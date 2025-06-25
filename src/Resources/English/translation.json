@@ -69,7 +69,7 @@
     },
     "footer": {
         "add_contact": "Add a contact",
-        "about": "About Aakasmik",
+        "about": "About Apatkalin",
         "contribute": "Contribute"
     },
     "contribute_form": {
@@ -80,7 +80,7 @@
         "got_it": "Got it"
     },
     "about": {
-        "about_project": "Aakasmik aims to centralize all the emergency contacts of Nepal in one place to make them accessible and open to the public.  This is an open-source project and is open to any kind of contribution from people like you.",
+        "about_project": "Apatkalin aims to centralize all the emergency contacts of Nepal in one place to make them accessible and open to the public.  This is an open-source project and is open to any kind of contribution from people like you.",
         "disclaimer": "Disclaimer: The contacts included in this project have been gathered from multiple sources. There is no guarantee of their complete accuracy or validity. Users should proceed at their own discretion."
     },
     "provinces": {

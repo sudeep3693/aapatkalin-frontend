@@ -22,7 +22,7 @@ setTheme(!theme)
     <>
       <Navbar fixed='top' className='blur-navbar'>
         <Container fluid >
-        <Navbar.Brand className=" App-Navbar text-primary">Aakashmik</Navbar.Brand>
+        <Navbar.Brand className=" App-Navbar text-primary">Apatkalin</Navbar.Brand>
         <Nav>
 
        

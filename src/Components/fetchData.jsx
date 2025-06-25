@@ -2,14 +2,14 @@ import { useEffect } from "react";
 
 
 
-function FetchData({setData}){
+function FetchData({setData, baseUrl}){
 
 
  
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch('http://localhost:8080/backaakashmik/api/users');
+            const response = await fetch(`${baseUrl}/backaakashmik/api/users`);
             const data = await response.json();
             setData(data);
           } catch (error) {
@@ -17,7 +17,7 @@ function FetchData({setData}){
           }
         };
         fetchData();
-      }, [setData]); // Added setData in dependencies
+      }, [setData,baseUrl]); // Added setData in dependencies
       
    return null;
 

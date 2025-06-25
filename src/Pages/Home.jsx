@@ -14,6 +14,9 @@ import FetchByLocation from '../Components/FetchByLocation';
 
 function Home() {
 
+  const Base_Url = "http://localhost:8080";
+ //const Base_Url = "https://5e68-27-34-72-167.ngrok-free.app";
+
   const [longitude, setLongitude] = useState();
   const [latitude, setLatitude] = useState();
   const [data, setData] = useState([]);
@@ -35,14 +38,14 @@ function Home() {
     <>
       <LocationComponent longitudee={setLongitude} latitudee={setLatitude} />
 
-      <FetchByLocation setData={setByLocation} longitude={longitude} latitude={latitude} />
+      <FetchByLocation setData={setByLocation} longitude={longitude} latitude={latitude} baseUrl = {Base_Url} />
       
       <NavBar setLanguage={setLanguage} lang={language} theme={theme} setTheme={setTheme} />
 
       <FetchRecords lang={language} setdatabylang={setdatabylang} />
       <HeaderPart setSearch={setSearch} databylang={databylang} setLStatus={setLStatus} lStatus={lStatus} />
-      <FetchData setData={setData} />
-      <FetchByData setData={setById} id={search} />
+      <FetchData setData={setData} baseUrl = {Base_Url}/>
+      <FetchByData setData={setById} id={search} baseUrl = {Base_Url}/>
       <RecordTable data={byId} locationwise={byLocation} searchBy={search} lang={language} databylang={databylang} lStatus = {lStatus} setOpenDetailModal={setOpenDetailModal} selecteddata={setSelectedData}/>
 
       <Paginnation dataset={data} lang={language} databylang={databylang} setOpenDetailModal={setOpenDetailModal} selecteddata={setSelectedData}  />
